@@ -45,32 +45,25 @@ function generatePassword() {
   if (passwordLength < 8 || passwordLength > 128) {
 
     alert("Please choose appropriate length for password");
-
+    
     return
   }
-
-
-
-
+  
   for (let i = 0; i < passwordLength; i++) {
     endProduct.push(builtArray[Math.floor(Math.random() * builtArray.length)])
-
+    
   }
-
-
+  
   console.log(endProduct)
   return endProduct.join("")
 }
-
-
-
 
 function writePassword() {
   let password = generatePassword();
   let passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
+  builtArray = []
 }
 
 // Add event listener to generate button
