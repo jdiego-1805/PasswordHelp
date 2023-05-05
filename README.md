@@ -12,3 +12,5 @@ This website helps you generate a password depending on your preference.
 
 N / A
 
+## Link
+
